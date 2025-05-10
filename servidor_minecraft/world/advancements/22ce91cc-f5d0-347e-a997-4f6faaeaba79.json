@@ -570,6 +570,7 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:skeleton": "2025-05-10 17:48:48 +0000",
       "minecraft:spider": "2025-05-10 16:08:06 +0000",
       "minecraft:husk": "2025-05-10 14:57:23 +0000",
       "minecraft:zombie": "2025-05-10 15:31:56 +0000"
@@ -1107,6 +1108,12 @@
   "minecraft:recipes/tools/flint_and_steel": {
     "criteria": {
       "has_flint": "2025-05-10 17:17:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2025-05-10 17:48:49 +0000"
     },
     "done": true
   },
