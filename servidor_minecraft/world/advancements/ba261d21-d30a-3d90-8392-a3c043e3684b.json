@@ -539,9 +539,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/copper_ingot_from_blasting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2025-05-10 20:53:15 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_slab": {
     "criteria": {
       "has_planks": "2025-05-10 20:24:48 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_copper_block": {
+    "criteria": {
+      "has_raw_copper": "2025-05-10 20:53:15 +0000"
     },
     "done": true
   },
@@ -806,6 +818,12 @@
   "minecraft:story/root": {
     "criteria": {
       "crafting_table": "2025-05-10 20:34:58 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_smelting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2025-05-10 20:53:15 +0000"
     },
     "done": true
   },
