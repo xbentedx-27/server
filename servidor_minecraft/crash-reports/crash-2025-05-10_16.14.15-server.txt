@@ -1,0 +1,189 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 2025-05-10 16:14:15
+Description: Exception ticking world
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.sounds.SoundEvent.m_215668_(float)" because the return value of "net.minecraft.core.Holder.m_203334_()" is null
+	at net.minecraft.server.level.ServerLevel.m_262808_(ServerLevel.java:908) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level.m_214150_(Level.java:395) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level.m_6263_(Level.java:401) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level.m_5594_(Level.java:389) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.mcreator.doppelgangermod.procedures.DieinnetherProcedure.execute(DieinnetherProcedure.java:46) ~[Doppelganger_V7_forge_1.20.1.jar%23141!/:?] {re:classloading}
+	at net.mcreator.doppelgangermod.procedures.DieinnetherProcedure.onEntitySpawned(DieinnetherProcedure.java:27) ~[Doppelganger_V7_forge_1.20.1.jar%23141!/:?] {re:classloading}
+	at net.mcreator.doppelgangermod.procedures.__DieinnetherProcedure_onEntitySpawned_EntityJoinLevelEvent.invoke(.dynamic) ~[Doppelganger_V7_forge_1.20.1.jar%23141!/:?] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.5.jar%2352!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%2352!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%2352!/:?] {}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157538_(PersistentEntitySectionManager.java:79) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157533_(PersistentEntitySectionManager.java:71) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.m_8872_(ServerLevel.java:860) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.m_7967_(ServerLevel.java:815) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411) ~[?:?] {}
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?] {}
+	at net.minecraft.world.level.ServerLevelAccessor.m_47205_(ServerLevelAccessor.java:11) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,re:classloading}
+	at net.minecraft.world.level.NaturalSpawner.m_47038_(NaturalSpawner.java:179) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,xf:fml:forge:forge_method_redirector}
+	at net.minecraft.world.level.NaturalSpawner.m_47045_(NaturalSpawner.java:118) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,xf:fml:forge:forge_method_redirector}
+	at net.minecraft.world.level.NaturalSpawner.m_47029_(NaturalSpawner.java:108) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,xf:fml:forge:forge_method_redirector}
+	at net.minecraft.server.level.ServerChunkCache.m_8490_(ServerChunkCache.java:358) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerChunkCache.m_201698_(ServerChunkCache.java:312) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:305) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:893) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver}
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:tombstone.mixins.json:DedicatedServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Suspected Mod: 
+	doppelgangermod (doppelgangermod), Version: 7.0
+		at TRANSFORMER/doppelgangermod@7.0/net.mcreator.doppelgangermod.procedures.DieinnetherProcedure.execute(DieinnetherProcedure.java:46)
+Stacktrace:
+	at net.minecraft.server.level.ServerLevel.m_262808_(ServerLevel.java:908) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level.m_214150_(Level.java:395) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level.m_6263_(Level.java:401) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.level.Level.m_5594_(Level.java:389) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.mcreator.doppelgangermod.procedures.DieinnetherProcedure.execute(DieinnetherProcedure.java:46) ~[Doppelganger_V7_forge_1.20.1.jar%23141!/:?] {re:classloading}
+	at net.mcreator.doppelgangermod.procedures.DieinnetherProcedure.onEntitySpawned(DieinnetherProcedure.java:27) ~[Doppelganger_V7_forge_1.20.1.jar%23141!/:?] {re:classloading}
+	at net.mcreator.doppelgangermod.procedures.__DieinnetherProcedure_onEntitySpawned_EntityJoinLevelEvent.invoke(.dynamic) ~[Doppelganger_V7_forge_1.20.1.jar%23141!/:?] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.5.jar%2352!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.5.jar%2352!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.5.jar%2352!/:?] {}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157538_(PersistentEntitySectionManager.java:79) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157533_(PersistentEntitySectionManager.java:71) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerLevel.m_8872_(ServerLevel.java:860) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.m_7967_(ServerLevel.java:815) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+	at java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411) ~[?:?] {}
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?] {}
+	at net.minecraft.world.level.ServerLevelAccessor.m_47205_(ServerLevelAccessor.java:11) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,re:classloading}
+	at net.minecraft.world.level.NaturalSpawner.m_47038_(NaturalSpawner.java:179) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,xf:fml:forge:forge_method_redirector}
+	at net.minecraft.world.level.NaturalSpawner.m_47045_(NaturalSpawner.java:118) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,xf:fml:forge:forge_method_redirector}
+	at net.minecraft.world.level.NaturalSpawner.m_47029_(NaturalSpawner.java:108) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,xf:fml:forge:forge_method_redirector}
+	at net.minecraft.server.level.ServerChunkCache.m_8490_(ServerChunkCache.java:358) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerChunkCache.m_201698_(ServerChunkCache.java:312) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:305) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:computing_frames,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B}
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayer['Th3User'/16754, l='ServerLevel[world]', x=18.71, y=57.00, z=-26.63]]
+	Chunk stats: 2401
+	Level dimension: minecraft:the_nether
+	Derived: true
+	Level spawn location: World: (0,109,0), Section: (at 0,13,0 in 0,6,0; chunk contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 327893 game time, 364909 day time
+	Level name: world
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Level weather: Rain time: 159292 (now: false), thunder time: 70753 (now: false)
+	Known server brands: forge
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:893) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver}
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:tombstone.mixins.json:DedicatedServerMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23169!/:?] {re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Linux (amd64) version 6.8.0-1027-azure
+	Java Version: 17.0.15, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 1885723560 bytes (1798 MiB) / 6484393984 bytes (6184 MiB) up to 12884901888 bytes (12288 MiB)
+	CPUs: 4
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD EPYC 7763 64-Core Processor
+	Identifier: AuthenticAMD Family 25 Model 1 Stepping 1
+	Microarchitecture: Zen 3
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 4
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 7995.00
+	Virtual memory used (MB): 8179.93
+	Swap memory total (MB): 0.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 2 total; -Xms2G -Xmx12G
+	Server Running: true
+	Player Count: 2 / 20; [ServerPlayer['Th3User'/16754, l='ServerLevel[world]', x=18.71, y=57.00, z=-26.63], ServerPlayer['chunck'/41005, l='ServerLevel[world]', x=3015.70, y=86.00, z=657.46]]
+	Data Packs: vanilla, mod:treechop (incompatible), mod:radiantgear (incompatible), mod:extragore, mod:gml, mod:jade (incompatible), mod:geckolib, mod:watching, mod:jei, mod:curios (incompatible), mod:xaerominimap (incompatible), mod:man, mod:collective, mod:anthropology_items__structures, mod:commongroovylibrary (incompatible), mod:wardrobe, mod:toughasnails (incompatible), mod:doppelgangermod, mod:inventoryhud (incompatible), mod:myserveriscompatible, mod:tombstone, mod:hangman (incompatible), mod:eatinganimation (incompatible), mod:architectury (incompatible), mod:jamlib, mod:rightclickharvest, mod:cave_dweller (incompatible), mod:mr_nyctophobia_dread (incompatible), mod:the_anomaly, mod:jeresources, mod:goat_man (incompatible), mod:forge, mod:spelunkers_charm, mod:herobrine, mod:healingcampfire
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar OptiFine TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@null
+		lowcodefml@null
+		minecraft@1.0
+		gml@4.0.11
+	Mod List: 
+		server-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: NOSIGNATURE
+		TreeChop-1.20.1-forge-0.19.0-fixed.jar            |HT's TreeChop                 |treechop                      |0.19.0              |DONE      |Manifest: NOSIGNATURE
+		radiantgear-forge-2.2.0+1.20.1.jar                |Radiant Gear                  |radiantgear                   |2.2.0+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		extragore-1.20.1-5.2.3.1.jar                      |Extra Gore                    |extragore                     |5.2.3.1             |DONE      |Manifest: NOSIGNATURE
+		mod-4.0.11.jar                                    |GroovyModLoader               |gml                           |4.0.11              |DONE      |Manifest: NOSIGNATURE
+		Jade-1.20.1-Forge-11.13.1.jar                     |Jade                          |jade                          |11.13.1+forge       |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.7.1.2.jar                 |GeckoLib 4                    |geckolib                      |4.7.1.2             |DONE      |Manifest: NOSIGNATURE
+		From-The-Fog-1.20-v1.9.2-Forge-Fabric.jar         |From The Fog                  |watching                      |1.9.2               |DONE      |Manifest: NOSIGNATURE
+		jei-1.20.1-forge-15.20.0.106.jar                  |Just Enough Items             |jei                           |15.20.0.106         |DONE      |Manifest: NOSIGNATURE
+		curios-forge-5.14.1+1.20.1.jar                    |Curios API                    |curios                        |5.14.1+1.20.1       |DONE      |Manifest: NOSIGNATURE
+		Xaeros_Minimap_25.2.0_Forge_1.20.jar              |Xaero's Minimap               |xaerominimap                  |25.2.0              |DONE      |Manifest: NOSIGNATURE
+		The-Man-From-The-Fog-1.4-1.20.1.jar               |The Man From The Fog          |man                           |1.4                 |DONE      |Manifest: NOSIGNATURE
+		collective-1.20.1-8.1.jar                         |Collective                    |collective                    |8.1                 |DONE      |Manifest: NOSIGNATURE
+		anthropology_items_structures_beta1.0_1.20.1.jar  |Anthropology: Items & Structur|anthropology_items__structures|0.1                 |DONE      |Manifest: NOSIGNATURE
+		cgl-1.20-forge-0.3.3.jar                          |CommonGroovyLibrary           |commongroovylibrary           |0.3.3               |DONE      |Manifest: NOSIGNATURE
+		wardrobe-1.0.3.1-forge-1.20.1.jar                 |Wardrobe                      |wardrobe                      |1.0.3.1             |DONE      |Manifest: NOSIGNATURE
+		ToughAsNails-1.20.1-9.0.0.96.jar                  |Tough As Nails                |toughasnails                  |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+		Doppelganger_V7_forge_1.20.1.jar                  |doppelgangermod               |doppelgangermod               |7.0                 |DONE      |Manifest: NOSIGNATURE
+		inventoryhud.forge.1.20.1-3.4.26.jar              |Inventory HUD+                |inventoryhud                  |3.4.26              |DONE      |Manifest: NOSIGNATURE
+		MyServerIsCompatible-1.20-1.0.jar                 |MyServerIsCompatible          |myserveriscompatible          |1.0                 |DONE      |Manifest: NOSIGNATURE
+		tombstone-1.20.1-8.9.4.jar                        |Corail Tombstone              |tombstone                     |8.9.4               |DONE      |Manifest: NOSIGNATURE
+		LeftHanging-forge-1.20.1-6.0.0.jar                |HangMan                       |hangman                       |6.0.0               |DONE      |Manifest: NOSIGNATURE
+		eatinganimation-1.20.1-5.1.0.jar                  |Eating Animation              |eatinganimation               |5.1.0               |DONE      |Manifest: NOSIGNATURE
+		architectury-9.2.14-forge.jar                     |Architectury                  |architectury                  |9.2.14              |DONE      |Manifest: NOSIGNATURE
+		jamlib-forge-1.3.5+1.20.1.jar                     |JamLib                        |jamlib                        |1.3.5+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		rightclickharvest-forge-4.5.3+1.20.1.jar          |Right Click Harvest           |rightclickharvest             |4.5.3+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		cartoon_dweller-1.20.1.jar                        |cave_dweller                  |cave_dweller                  |1.6.4               |DONE      |Manifest: NOSIGNATURE
+		nyctophobia-dread-3.jar                           |Nyctophobia Dread             |mr_nyctophobia_dread          |3                   |DONE      |Manifest: NOSIGNATURE
+		Anomaly-1.1.5-FullShaderSupport.jar               |The Anomaly                   |the_anomaly                   |1.1.5               |DONE      |Manifest: NOSIGNATURE
+		JustEnoughResources-1.20.1-1.4.0.247.jar          |Just Enough Resources         |jeresources                   |1.4.0.247           |DONE      |Manifest: NOSIGNATURE
+		goat_man-1.20.1-2.8.jar                           |goat_man                      |goat_man                      |2.8                 |DONE      |Manifest: NOSIGNATURE
+		forge-1.20.1-47.4.0-universal.jar                 |Forge                         |forge                         |47.4.0              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		spelunkers_charm-3.6.0-1.20.1.jar                 |Spelunker's Charm             |spelunkers_charm              |3.6.0               |DONE      |Manifest: NOSIGNATURE
+		herobrine-1-forge-1.20.1.jar                      |herobrine                     |herobrine                     |1                   |DONE      |Manifest: NOSIGNATURE
+		healingcampfire-1.20.1-6.0.jar                    |Healing Campfire              |healingcampfire               |6.0                 |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: e945fbd0-23b4-4337-87a5-73122c71924c
+	FML: 47.4
+	Forge: net.minecraftforge:47.4.0
