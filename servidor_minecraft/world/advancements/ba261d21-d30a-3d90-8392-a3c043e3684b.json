@@ -27,6 +27,7 @@
     "criteria": {
       "minecraft:wooded_badlands": "2025-05-10 02:15:35 +0000",
       "minecraft:sparse_jungle": "2025-05-10 02:15:08 +0000",
+      "minecraft:dripstone_caves": "2025-05-10 20:43:19 +0000",
       "minecraft:forest": "2025-05-10 02:13:21 +0000",
       "minecraft:desert": "2025-05-10 02:15:47 +0000",
       "minecraft:jungle": "2025-05-10 15:28:42 +0000",
@@ -298,6 +299,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/raw_iron_block": {
+    "criteria": {
+      "has_raw_iron": "2025-05-10 20:52:16 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/diorite_slab": {
     "criteria": {
       "has_diorite": "2025-05-10 20:16:53 +0000"
@@ -442,6 +449,12 @@
     },
     "done": true
   },
+  "tombstone:adventure/chain_death": {
+    "criteria": {
+      "coded_trigger": "2025-05-10 20:44:12 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/birch_slab": {
     "criteria": {
       "has_planks": "2025-05-10 20:14:29 +0000"
@@ -463,6 +476,12 @@
   "minecraft:recipes/transportation/birch_boat": {
     "criteria": {
       "in_water": "2025-05-10 20:32:13 +0000"
+    },
+    "done": true
+  },
+  "tombstone:adventure/first_knowledge": {
+    "criteria": {
+      "coded_trigger": "2025-05-10 20:44:12 +0000"
     },
     "done": true
   },
@@ -535,6 +554,12 @@
   "minecraft:recipes/building_blocks/birch_planks": {
     "criteria": {
       "has_logs": "2025-05-10 20:13:45 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2025-05-10 20:52:16 +0000"
     },
     "done": true
   },
@@ -646,9 +671,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/dripstone_block": {
+    "criteria": {
+      "has_pointed_dripstone": "2025-05-10 20:48:43 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
       "in_water": "2025-05-10 20:32:13 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2025-05-10 20:52:16 +0000"
     },
     "done": true
   },
