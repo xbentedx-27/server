@@ -27,6 +27,7 @@
     "criteria": {
       "minecraft:eroded_badlands": "2025-05-10 15:44:54 +0000",
       "minecraft:bamboo_jungle": "2025-05-10 02:13:17 +0000",
+      "minecraft:wooded_badlands": "2025-05-10 17:32:40 +0000",
       "minecraft:badlands": "2025-05-10 15:45:17 +0000",
       "minecraft:beach": "2025-05-10 02:46:35 +0000",
       "minecraft:sparse_jungle": "2025-05-10 01:50:42 +0000",
@@ -613,7 +614,8 @@
       "beef": "2025-05-10 02:55:39 +0000",
       "potato": "2025-05-10 02:51:32 +0000",
       "mutton": "2025-05-10 02:55:20 +0000",
-      "bread": "2025-05-10 02:32:46 +0000"
+      "bread": "2025-05-10 02:32:46 +0000",
+      "rotten_flesh": "2025-05-10 17:45:09 +0000"
     },
     "done": false
   },
@@ -1508,6 +1510,12 @@
   "tombstone:adventure/strong_or_careful": {
     "criteria": {
       "coded_trigger": "2025-05-10 16:35:17 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_chestplate": "2025-05-10 17:38:51 +0000"
     },
     "done": true
   },
